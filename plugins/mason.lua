@@ -6,10 +6,12 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
-      opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
-        -- "lua_ls",
-      })
-    end,
+      opts.ensure_installed =
+          require("astronvim.utils").list_insert_unique(
+            opts.ensure_installed, {
+              -- "lua_ls",
+            })
+    end
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
   {
@@ -17,20 +19,25 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
-      opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
-        -- "prettier",
-        -- "stylua",
-      })
-    end,
-  },
-  {
-    "jay-babu/mason-nvim-dap.nvim",
-    -- overrides `require("mason-nvim-dap").setup(...)`
-    opts = function(_, opts)
-      -- add more things to the ensure_installed table protecting against community packs modifying it
-      opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
-        -- "python",
-      })
-    end,
-  },
+      opts.ensure_installed =
+          require("astronvim.utils").list_insert_unique(
+            opts.ensure_installed, {
+              -- "prettier",
+              -- "stylua",
+            })
+    end
+  }, {
+  "jay-babu/mason-nvim-dap.nvim",
+  -- overrides `require("mason-nvim-dap").setup(...)`
+  opts = function(_, opts)
+    -- add more things to the ensure_installed table protecting against community packs modifying it
+    opts.ensure_installed =
+        require("astronvim.utils").list_insert_unique(
+          opts.ensure_installed, {
+            "python",                                                   -- Python
+            "typescript", "chrome", "delve", "node2", "js",             -- Web
+            "codelldb"                                                  -- Native LLDB (C/C++/Rust)
+          })
+  end
+}
 }
