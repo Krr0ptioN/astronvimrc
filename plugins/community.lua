@@ -20,6 +20,7 @@ return {
     {import = "astrocommunity.pack.rust"},
     -- Markdown ---------------------------------
     {import = "astrocommunity.markdown-and-latex.glow-nvim"},
+    {import = "astrocommunity.markdown-and-latex.markdown-preview-nvim"},
     -- Project ----------------------------------
     {import = "astrocommunity.project.project-nvim"}
 }
