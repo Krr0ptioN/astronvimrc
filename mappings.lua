@@ -6,10 +6,11 @@
 return {
     -- first key is the mode
     n = {
+        ["]p"] = {"o<esc>p", desc = "Paste below"},
+        ["[p"] = {"O<esc>p", desc = "Paste Above"},
         -- second key is the lefthand side of the map
         -- mappings seen under group name "Buffer"
         ["<leader>bn"] = {"<cmd>tabnew<cr>", desc = "New tab"},
-        ["<leader>gg"] = {"<cmd>Neogit<cr>", desc = "Neogit"},
         ["<leader>bD"] = {
             function()
                 require("astronvim.utils.status").heirline.buffer_picker(
