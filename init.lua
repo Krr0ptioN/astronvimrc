@@ -81,7 +81,6 @@ return {
         --     ["~/%.config/foo/.*"] = "fooscript",
         --   },
         -- }
-        require("neogit").setup()
         require("todo-comments").setup()
     end
 }
