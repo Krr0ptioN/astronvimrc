@@ -4,7 +4,6 @@ return {
     -- Diagnostics ------------------------------
     {import = "astrocommunity.diagnostics.trouble-nvim"},
     {import = "astrocommunity.code-runner.sniprun"},
-    {import = "astrocommunity.workflow.hardtime-nvim"},
     -- Git --------------------------------------
     {import = "astrocommunity.git.git-blame-nvim"},
     {import = "astrocommunity.git.octo-nvim"},
