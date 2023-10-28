@@ -4,7 +4,6 @@ return {
     -- Diagnostics ------------------------------
     {import = "astrocommunity.diagnostics.trouble-nvim"},
     {import = "astrocommunity.code-runner.sniprun"},
-    {import = "astrocommunity.workflow.hardtime-nvim"},
     -- Git --------------------------------------
     {import = "astrocommunity.git.git-blame-nvim"},
     {import = "astrocommunity.git.octo-nvim"},
@@ -21,6 +20,7 @@ return {
     {import = "astrocommunity.pack.markdown"},
     {import = "astrocommunity.pack.tailwindcss"},
     {import = "astrocommunity.pack.clojure"},
+    {import = "astrocommunity.pack.html-css"},
     {import = "astrocommunity.pack.yaml"},
     {import = "astrocommunity.pack.cmake"},
     {import = "astrocommunity.pack.json"}, {import = "astrocommunity.pack.php"},
