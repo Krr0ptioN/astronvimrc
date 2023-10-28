@@ -19,6 +19,8 @@ return {
     {import = "astrocommunity.pack.docker"},
     {import = "astrocommunity.pack.markdown"},
     {import = "astrocommunity.pack.tailwindcss"},
+    {import = "astrocommunity.pack.clojure"},
+    {import = "astrocommunity.pack.html-css"},
     {import = "astrocommunity.pack.yaml"},
     {import = "astrocommunity.pack.cmake"},
     {import = "astrocommunity.pack.json"}, {import = "astrocommunity.pack.php"},
