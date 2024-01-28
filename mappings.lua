@@ -10,6 +10,7 @@ return {
         ["[p"] = {"O<esc>p", desc = "Paste Above"},
         -- second key is the lefthand side of the map
         -- mappings seen under group name "Buffer"
+        ["<leader>ga"] = {"<cmd>GhActions<cr>", desc = "Github Action"},
         ["<leader>bn"] = {"<cmd>tabnew<cr>", desc = "New tab"},
         ["<leader>bD"] = {
             function()

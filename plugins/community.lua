@@ -14,7 +14,7 @@ return {
     {import = "astrocommunity.editing-support.neogen"},
     {import = "astrocommunity.editing-support.nvim-devdocs"},
     -- Pack -------------------------------------
-    {import = "astrocommunity.pack.typescript"},
+    -- {import = "astrocommunity.pack.typescript"},
     {import = "astrocommunity.pack.prisma"},
     {import = "astrocommunity.pack.docker"},
     {import = "astrocommunity.pack.markdown"},
