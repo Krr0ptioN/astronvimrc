@@ -16,8 +16,7 @@ return {
             })
             require "plugins.configs.luasnip"(plugin, opts)
             require("luasnip.loaders.from_vscode").lazy_load {
-                -- Adjust the path relative to your configuration directory
-                -- paths = {"./lua/user/snippets"}
+                paths = {"./../snippets"}
             }
         end
     }

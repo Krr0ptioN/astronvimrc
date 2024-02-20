@@ -14,7 +14,7 @@ return {
     {import = "astrocommunity.editing-support.neogen"},
     {import = "astrocommunity.editing-support.nvim-devdocs"},
     -- Pack -------------------------------------
-    -- {import = "astrocommunity.pack.typescript"},
+    {import = "astrocommunity.pack.typescript"},
     {import = "astrocommunity.pack.prisma"},
     {import = "astrocommunity.pack.docker"},
     {import = "astrocommunity.pack.markdown"},
@@ -25,7 +25,7 @@ return {
     {import = "astrocommunity.pack.cmake"},
     {import = "astrocommunity.pack.json"}, {import = "astrocommunity.pack.php"},
     {import = "astrocommunity.pack.python"},
-    {import = "astrocommunity.pack.rust"},
+    {import = "astrocommunity.pack.rust"}, {import = "astrocommunity.pack.go"},
     -- Completion ---------------------------------
     {import = "astrocommunity.completion.tabnine-nvim"},
     -- {import = "astrocommunity.completion.cmd-cmdline"},

@@ -28,6 +28,7 @@ return {
         }
     }
 }
+
 -- If you need more control, you can use the function()...end notation
 -- return function(local_vim)
 --   local_vim.opt.relativenumber = true
