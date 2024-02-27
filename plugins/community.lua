@@ -1,6 +1,5 @@
 return {
-    "AstroNvim/astrocommunity",
-    -- Add the community repository of plugin specifications
+    "AstroNvim/astrocommunity", ------------------------
     -- Diagnostics ------------------------------
     {import = "astrocommunity.diagnostics.trouble-nvim"},
     {import = "astrocommunity.code-runner.sniprun"},
@@ -9,6 +8,7 @@ return {
     {import = "astrocommunity.git.octo-nvim"},
     -- Motions ----------------------------------
     {import = "astrocommunity.motion.nvim-surround"},
+    {import = "astrocommunity.motion.harpoon"},
     -- Editing Support --------------------------
     {import = "astrocommunity.editing-support.hypersonic-nvim"},
     {import = "astrocommunity.editing-support.neogen"},
@@ -31,9 +31,8 @@ return {
     -- {import = "astrocommunity.completion.cmd-cmdline"},
     -- Markdown ---------------------------------
     {import = "astrocommunity.markdown-and-latex.glow-nvim"},
-    {import = "astrocommunity.markdown-and-latex.markdown-preview-nvim"},
     --- Latex -----------------------------------
-    {import = "astrocommunity/markdown-and-latex/vimtex"},
+    {import = "astrocommunity.markdown-and-latex.vimtex"},
     -- Project ----------------------------------
     {import = "astrocommunity.project.project-nvim"}
 }
