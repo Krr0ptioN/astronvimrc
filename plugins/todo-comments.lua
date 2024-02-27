@@ -3,8 +3,6 @@ return {
     dependencies = {"nvim-lua/plenary.nvim"},
     event = "User AstronFile",
     cmd = {"TodoTrouble", "TodoTelescope", "TodoLocList", "TodoQuickFix"},
-    -- opts = {
-
     config = function()
         require('todo-comments').setup({
             signs = true, -- show icons in the signs column
