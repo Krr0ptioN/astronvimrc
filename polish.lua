@@ -17,4 +17,5 @@ return function()
 
     -- Neovide
     require('user.components.neovide').config()
+    require('todo-comments').setup()
 end
