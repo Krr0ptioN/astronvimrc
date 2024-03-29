@@ -8,6 +8,14 @@
             {
                 "language": "php",
                 "path": "./php.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./next.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./typescript-react.json"
             }
         ]
     }
