@@ -1,0 +1,44 @@
+{
+    "Print a string to System.out": {
+        "prefix": "sout",
+        "body": [
+            "System.out.println($0);"
+        ],
+        "description": "Print a string to System.out"
+    },
+    "Prints a string to System.err": {
+        "prefix": "serr",
+        "body": [
+            "System.err.println($0);"
+        ],
+        "description": "Prints a string to System.err"
+    },
+    "Private field": {
+        "prefix": "prv_f",
+        "body": [
+            "private ${1:String} ${2:name};"
+        ],
+        "description": "Private field"
+    },
+    "Public field": {
+        "prefix": "pub_f",
+        "body": [
+            "public ${1:String} ${2:name};"
+        ],
+        "description": "Public field"
+    },
+    "String": {
+        "prefix": "st",
+        "body": [
+            "String"
+        ],
+        "description": "String"
+    },
+    "throw new": {
+        "prefix": "thr",
+        "body": [
+            "throw new "
+        ],
+        "description": "throw new"
+    }
+}

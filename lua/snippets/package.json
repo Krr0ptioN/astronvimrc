@@ -1,0 +1,42 @@
+{
+    "name": "personal-snippets",
+    "engines": {
+        "vscode": "^1.11.0"
+    },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescriptreact",
+                "path": "./next.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./typescript-react.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./nest.json"
+            },
+            {
+                "language": "kotlin",
+                "path": "./kotlin.json"
+            },
+            {
+                "language": "java",
+                "path": "./java.json"
+            },
+            {
+                "language": "java",
+                "path": "./java-spring-boot.json"
+            },
+            {
+                "language": "kotlin",
+                "path": "./java-spring-boot.json"
+            },
+            {
+                "language": "kotlin",
+                "path": "./kotlin-spring-boot.json"
+            }
+        ]
+    }
+}
