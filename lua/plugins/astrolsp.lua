@@ -19,6 +19,7 @@ return {
       format_on_save = {
         enabled = false, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
+          "typst",
           -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
@@ -39,7 +40,35 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      tinymist = {
+        keys = {
+          {
+            "<leader>lcP",
+            function()
+              local buf_name = vim.api.nvim_buf_get_name(0)
+              local file_name = vim.fn.fnamemodify(buf_name, ":t")
+              vim.lsp.execute({
+                command = "tinymist.pinMain",
+                arguments = { buf_name },
+              })
+              vim.notify("Tinymist: Pinned " .. file_name)
+            end,
+            desc = "Pin main file",
+          },
+          {
+            "<leader>lcv",
+            "<cmd>TypstPreview<cr>",
+            desc = "Preview Typst",
+          },
+        },
+        settings = {
+          exportPdf = "onSave",
+          root = ".",
+          formatterMode = "typstyle",
+          semanticTokens = "full",
+          hoverPreview = "on",
+        },
+      },
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields

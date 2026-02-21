@@ -6,6 +6,10 @@
     "contributes": {
         "snippets": [
             {
+                "language": "typst",
+                "path": "./typst.json"
+            },
+            {
                 "language": "typescriptreact",
                 "path": "./next.json"
             },

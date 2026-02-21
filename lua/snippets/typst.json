@@ -1,0 +1,106 @@
+{
+  "lecture-quote": {
+    "prefix": "lq",
+    "body": [
+      "#lecture-quote(lec: ${1:1}, time: \"${2:00:00}\")[",
+      "  $0",
+      "]"
+    ],
+    "description": "Add a lecture quote with timestamp"
+  },
+  "mit-quote": {
+    "prefix": "mit",
+    "body": [
+      "#mit(lec: ${1:1}, time: \"${2:00:00}\")[",
+      "  $0",
+      "]"
+    ],
+    "description": "Add an MIT lecture quote"
+  },
+  "ce": {
+    "prefix": "ce",
+    "body": "#ce(\"$1\")$0",
+    "description": "Upright chemical equation"
+  },
+  "topics": {
+    "prefix": "tp",
+    "body": "#topics(\"$1\")$0",
+    "description": "Add topics for the current section"
+  },
+  "definition": {
+    "prefix": "def",
+    "body": [
+      "#definition(title: \"${1:Term}\")[",
+      "  $0",
+      "]"
+    ],
+    "description": "Add a definition"
+  },
+  "example": {
+    "prefix": "ex",
+    "body": [
+      "#example(title: \"${1:Example}\")[",
+      "  $0",
+      "]"
+    ],
+    "description": "Add an example"
+  },
+  "key-concept": {
+    "prefix": "kc",
+    "body": [
+      "#key-concept[",
+      "  $0",
+      "]"
+    ],
+    "description": "Add a key concept"
+  },
+  "warning": {
+    "prefix": "wr",
+    "body": [
+      "#warning[",
+      "  $0",
+      "]"
+    ],
+    "description": "Add a warning"
+  },
+  "hydroxyl": {
+    "prefix": "oh",
+    "body": "#ce(\"-O H\")",
+    "description": "Hydroxyl group"
+  },
+  "carboxyl": {
+    "prefix": "cooh",
+    "body": "#ce(\"-C O O H\")",
+    "description": "Carboxyl group"
+  },
+  "amino": {
+    "prefix": "nh2",
+    "body": "#ce(\"-N H_2\")",
+    "description": "Amino group"
+  },
+  "sulfhydryl": {
+    "prefix": "sh",
+    "body": "#ce(\"-S H\")",
+    "description": "Sulfhydryl group"
+  },
+  "phosphate": {
+    "prefix": "po4",
+    "body": "#ce(\"-P O_4^3-\")",
+    "description": "Phosphate group"
+  },
+  "glycine": {
+    "prefix": "gly",
+    "body": "Glycine (#ce(\"H_2 N - C H_2 - C O O H\"))",
+    "description": "Glycine"
+  },
+  "alanine": {
+    "prefix": "ala",
+    "body": "Alanine (#ce(\"H_2 N - C H (C H_3) - C O O H\"))",
+    "description": "Alanine"
+  },
+  "serine": {
+    "prefix": "ser",
+    "body": "Serine (#ce(\"H_2 N - C H (C H_2 O H) - C O O H\"))",
+    "description": "Serine"
+  }
+}

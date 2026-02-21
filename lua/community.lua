@@ -1,6 +1,6 @@
 ---@type LazySpec
 return {
-  "AstroNvim/astrocommunity",
+  { "AstroNvim/astrocommunity", dir = "/home/master/hex/repos/astrocommunity" },
   { import = "astrocommunity.recipes.telescope-nvchad-theme" },
   -- Diagnostics ------------------------------
   { import = "astrocommunity.diagnostics.trouble-nvim" },
@@ -23,19 +23,23 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.clojure" },
+  { import = "astrocommunity.code-runner.conjure" },
+  { import = "astrocommunity.code-runner.executor-nvim" },
+  { import = "astrocommunity.lsp.ts-error-translator-nvim" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.php" },
+  { import = "astrocommunity.pack.laravel" },
+  { import = "astrocommunity.pack.blade" },
   { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.kotlin" },
   { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.pack.java" },
   {
     "mfussenegger/nvim-jdtls",
     opts = {
@@ -59,12 +63,37 @@ return {
         },
       },
     },
-  },-- Completion ---------------------------------
-  { import = "astrocommunity.completion.tabnine-nvim" },
-  -- Markdown ---------------------------------
-  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
+  },
   --- Latex -----------------------------------
   { import = "astrocommunity.markdown-and-latex.vimtex" },
+  -- Markdown ---------------------------------
+  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markmap-nvim" },
+
+  --- AI ----
+  { import = "astrocommunity.recipes.ai" },
+
   -- Project ----------------------------------
   { import = "astrocommunity.project.project-nvim" },
+  -- Note Taking ------------------------------
+  -- { import = "astrocommunity.note-taking.obsidian-nvim" },
+  -- Utility ----------------------------------
+  -- { import = "astrocommunity.utility.community-picker" },
+  { import = "astrocommunity.colorscheme.aurora" },
+  { import = "astrocommunity.ai.sidekick-nvim" },
+  { import = "astrocommunity.terminal-integration.flatten-nvim" },
+  {
+    "pmizio/typescript-tools.nvim",
+    opts = {
+      handlers = {
+        diagnostic = false,  -- Disable error source
+      }
+    }
+  },
+  {
+    "nvimdev/ts-error-translator.nvim",
+    enabled = false,  -- Primary culprit
+  },{ import = "astrocommunity.ai.opencode-nvim" },
 }

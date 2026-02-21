@@ -64,6 +64,22 @@ return {
           desc = "Pick to close",
         },
         ["<Leader>b"] = { desc = "Buffers" },
+
+        -- toggle absolute line numbers
+        ["<leader>un"] = {
+          function()
+            vim.opt.number = not vim.opt.number:get()
+          end,
+          desc = "Toggle line numbers",
+        },
+
+        -- toggle relative line numbers
+        ["<leader>ur"] = {
+          function()
+            vim.opt.relativenumber = not vim.opt.relativenumber:get()
+          end,
+          desc = "Toggle relative numbers",
+        },
       },
       t = {},
     },
